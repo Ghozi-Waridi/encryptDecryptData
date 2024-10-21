@@ -17,11 +17,8 @@ public class Decrypt {
             key += i;
 
             char hasil = (char) (arrDecrypt[i] ^ (key % 255));
-
-            hasil = (char) (hasil & (key % 255));
-            hasil = (char) (hasil | (key % 255));
+            
             arrDecrypt[i] = hasil;
-
         }
     }
 
